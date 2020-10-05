@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Mansalva";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* Read next point */
+  unicode-range: U+000-5FF;
+  /* Download only latin glyphs */
+  src: local("Mansalva"), url("./fonts/Mansalva-Regular.woff") format("woff");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Mansalva", "Times New Roman", Times, serif;
+  font-size: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+nav a {
+  color: #eee69c;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fdaa0f;
+}
+
+.section-container {
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Mansalva", "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+
+#mc_embed_signup {
+  background-color: black;
+  color: #eee69c;
+}
+
+footer {
+  background-color: black;
+  color: #eee69c;
+  display: flex;
+  justify-content: space-around;
+}
+footer ul {
+  display: flex;
+  padding-inline-start: 0;
+}
+footer li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+footer i {
+  margin: 0 1em;
+}
+footer a {
+  color: rgba(238, 230, 156, 0.5);
+}
+footer a:hover {
+  color: #eee69c;
+}
+
+.label {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

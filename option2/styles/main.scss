@@ -1,0 +1,73 @@
+$base-color: rgb(238, 230, 156);
+@font-face {
+  font-family: "Mansalva";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Mansalva"), url("./fonts/Mansalva-Regular.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Mansalva", "Times New Roman", Times, serif;
+  font-size: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(black, 1);
+  a {
+    color: $base-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(253, 170, 15);
+  }
+}
+
+.section-container {
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Mansalva", "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+
+// MailChimp Overrides
+#mc_embed_signup {
+  background-color: black;
+  color: $base-color;
+}
+
+footer {
+  background-color: black;
+  color: $base-color;
+  display: flex;
+  justify-content: space-around;
+  ul {
+    display: flex;
+    padding-inline-start: 0;
+  }
+  li {
+    list-style-type: none;
+    font-size: 2rem;
+  }
+  i {
+    margin: 0 1em;
+  }
+  a {
+    color: rgba($base-color, 0.5);
+  }
+  a:hover {
+    color: rgba($base-color, 1);
+  }
+}
+
+.label {
+  display: none;
+}
