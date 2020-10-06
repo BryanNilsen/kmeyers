@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;500;800&family=Nanum+Pen+Script&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;500;800&family=Nanum+Pen+Script&display=swap"); */
 
 .molle {
   font-family: "Molle", cursive;
@@ -12,7 +12,8 @@
 }
 
 :root {
-  --primary: rgb(214, 3, 0);
+  /* --primary: rgb(214, 3, 0); */
+  --primary: rgb(0, 0, 0);
   --secondary: rgb(253, 255, 139);
 }
 
@@ -26,6 +27,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--primary);
+  /* min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto; */
 }
 
 header {
@@ -33,6 +38,9 @@ header {
   text-shadow: 5px 5px 5px rgb(0 0 0);
 }
 
+.page__title {
+  color: orange;
+}
 /* NAVIGATION */
 
 nav {
@@ -91,6 +99,8 @@ footer {
   background-color: black;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
+  clear: both;
+  position: relative;
 }
 
 /* SUBSCRIBE */
@@ -117,14 +127,64 @@ label {
   width: 60px !important;
 }
 
-.music__item {
-  background-color: rgb(0, 0, 0);
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  background-color: red !important;
+  color: white !important;
 }
 
-.music__item > img {
-  width: 100%;
-  transition: opacity 0.15s ease-in-out;
+/* MUSIC CARDS */
+.music__container {
+  position: relative;
+  background-color: black;
+  margin: 1rem;
 }
-.music__item > img:hover {
-  opacity: 0.2;
+
+.music__image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.music__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.music__container:hover .music__image {
+  opacity: 0.25;
+}
+
+.music__container:hover .music__middle {
+  opacity: 1;
+}
+
+.music__text {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.music__button {
+  border: 4px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.music__button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* TOUR */
+.tour__table {
+  font-weight: 500;
+  max-width: 900px;
+  color: gray;
 }
